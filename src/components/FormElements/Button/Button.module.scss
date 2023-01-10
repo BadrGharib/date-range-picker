@@ -1,0 +1,18 @@
+@import '../../../styles/common.scss';
+
+.button {
+  width: 100px;
+  height: 30px;
+  border: 1px solid $secondery;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: $dark; 
+  font-weight: bolder;
+  background: $light;
+  &:hover {
+    @include hoverEfect;
+    border: 1px solid $primary;
+  }
+}

@@ -1,0 +1,22 @@
+@import '../../../styles/common.scss';
+.header{
+    background-color: $primary;
+    height: 30px;
+    color: $light;
+}
+.row{
+    display: flex;
+    width: 100%;
+   
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid $secondery;
+    width: 100%;
+    padding-left: 5px;
+    
+}
+.odd{
+    background-color: $light;
+}

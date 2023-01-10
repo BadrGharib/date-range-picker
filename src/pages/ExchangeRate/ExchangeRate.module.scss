@@ -1,0 +1,16 @@
+.exchangeRate{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    .exchangeRate_result{
+        width: 485px;
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    padding: 20px;
+
+}

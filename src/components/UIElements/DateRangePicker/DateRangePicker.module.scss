@@ -1,0 +1,76 @@
+@import '../../../styles/common.scss';
+.dateRangePicker{
+    display: flex;
+    position: relative;
+    width: 485px;
+    .dateRangePicker_start{
+        min-width: 200px;
+        width: 50%;
+    }
+    .dateRangePicker_end{
+      min-width: 200px;
+      width: 50%;
+    }
+    .dateRangePicker_startEnd__selected{
+        background-color: $primary;
+        color: $light;
+        &:hover{
+            @include hoverEfect;
+        }
+    }
+    .dateRangePicker_datesPicker{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        overflow: hidden;
+        animation-name: dateRangePicker_openCalenderAnimation;
+        animation-duration: .1s;
+        transition: .1s ease;
+        background-color: $light;
+        border-radius: 2px 0;
+        width: 100%;
+        border-width: 0 1px 1px 1px;
+        border-style: solid;
+        border-color: $secondery;
+        .dateRangePicker_calenders{
+            display: flex;
+            .dateRangePicker_calenders__calendarStart{
+                border-radius: 0;
+                border-width: 0px 1px 0px 0px;
+            }
+            .dateRangePicker_calenders__calendarEnd{
+                border-radius: 0;
+                border-width: 0px;
+            }
+            .dateRangePicker_calenders__day{
+                &:hover{
+                    @include hoverEfect;
+                }
+            }
+        }
+        .dateRangePicker_namedRanges{
+            display: flex;
+            width: 100%;
+            width: 101%;
+            margin-left: -1px;
+            .dateRangePicker_namedRanges__namedRangeBtn{
+                width: 50%;
+                border-width: 1px 1px 1px 1px;
+                border-style: solid;
+                border-color: $secondery;
+            }
+        }
+
+
+    }
+   
+}
+@keyframes dateRangePicker_openCalenderAnimation {
+    0% {
+      height:0px;
+    }
+    100% {
+        height:235px;
+    }
+  }
